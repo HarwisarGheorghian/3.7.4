@@ -1,3 +1,5 @@
+import java.io.*;
+import java.util.*;
 public class RandomPermutation
 {
   /**
@@ -25,5 +27,18 @@ public class RandomPermutation
       // debug: System.out.println(java.util.Arrays.toString(r));
       return r;
    }
+
+   public static ArrayList<Horse> horseRandomizer(ArrayList<Horse> horses){
+
+      for(int i = 0; i < horses.size(); i++){
+        int random = (int)(Math.random() * horses.size());
+        Horse temp = horses.get(i);
+        horses.set(i, horses.get(random));
+        horses.set(random, temp);
+      }
+      return horses;
+   }
+
+   public static Map<
 
 }

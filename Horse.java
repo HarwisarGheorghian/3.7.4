@@ -6,4 +6,12 @@ public class Horse{
         this.name = name;
         this.weight = weight;
     }
+
+    public String getName(){
+        return this.name;
+    }
+
+    public int getWeight(){
+        return this.weight;
+    }
 }
